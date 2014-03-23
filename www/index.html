@@ -23,21 +23,50 @@
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <!-- Hojas de estilo -->
+            <link rel="stylesheet" href="css/lungo.css">
+            <link rel="stylesheet" href="css/lungo.icon.css">
+            <link rel="stylesheet" href="css/lungo.theme.css">
+    <!-- Hojas de phonegap -->
+       
+
+        <!-- Script -->
+            <script src="js/quo.js"></script>
+            <script src="js/lungo.js"></script>
         <title>Hello World</title>
     </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+    <body class="app">
+        <section id="main" data-transition="slide">
+                <header data-title="Encabezado Descabezado"></header>
+                <article id="main-article">
+                    <center>Hola Peque</center>
+                   
+                    
+                </article>
+                <article id="uno">
+                    asda
+
+                </article>
+                <article id="dos">
+                    adafa
+
+                </article>
+                    <footer>
+                        <nav> <!-- Para poner botenes de navegacion-->
+                            <a href="#" data-icon="menu" class="active" data-view-article="main-article"></a>
+                            <a href="#" data-icon="share" data-view-article="uno"></a>
+                            <a href="#" data-icon="user"  data-view-article="dos"></a>
+                        </nav>
+                    </footer>
+            </section>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            Lungo.init({
+                     name: 'hello-world'
+                });
         </script>
     </body>
 </html>
